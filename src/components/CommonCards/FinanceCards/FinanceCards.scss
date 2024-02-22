@@ -1,0 +1,113 @@
+.Finance{
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 6px 46px 0px rgba(0, 0, 0, 0.12);
+    padding: 1rem;
+    padding-bottom: 1rem;
+    max-width: 12rem;
+    min-width: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+.moduleFinance {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+   
+
+    .rectanglePart {
+        align-self: flex-end;
+    }
+
+    .rectangle {
+        // margin-top: 0.875rem;
+        height: 20px;
+        width: 20px;
+    }
+
+    .cardtitle {
+        color: #000;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 0.5rem 0rem 0.5rem 0rem;
+        /* 90.909% */
+
+        span {
+            color: #858BA0;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            padding-left:0.3rem ;
+            /* 142.857% */
+        }
+    }
+
+
+    .logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    .contentpart {
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        gap: 7px;
+    }
+
+    .contentrow {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .content {
+        color: #7E7E7E;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        // line-height: 22px;
+        /* 157.143% */
+        letter-spacing: 0.168px;
+
+    }
+
+    
+   
+
+}
+
+.buttonContainer{
+    color:white;
+    display: flex;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    width:fit-content;
+    padding: 0rem 1rem 0rem 1rem;
+    border-radius: 4px;
+    .selectButton{
+        text-decoration: none;
+        color:white;
+    }
+}
+@media screen and (max-width:480px) {
+    min-width: 20rem;
+    
+}
+@media screen and (min-width:481px ) and (max-width:1024px) {
+    max-width: 33rem;     
+  }
+}

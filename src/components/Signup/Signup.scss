@@ -1,0 +1,327 @@
+@import "../../scss/common/common";
+
+$signuptextcolor: #9a9a9a;
+$signuptextweight: 400;
+$signuptextweightbold: 600;
+
+.signup {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  .company {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1); /* Adding a bottom box shadow */
+
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 12px;
+      .colorHeading {
+        color: #0b80a8;
+      }
+      div {
+        font-size: 0.8rem;
+      }
+      .mobileLogo{
+        width:20vw;
+      }
+    }
+  }
+  .signup-image {
+    height: 100vh;
+    width: 50vw;
+    object-fit: cover;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  .main-part {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 4rem;
+    @media screen and (max-width: 480px) {
+      margin: 0px;
+    }
+    .auth {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 2px 2px 8px #888;
+      border-radius: 12px;
+      a {
+        text-decoration: none;
+        padding: 0.3rem 0.6rem;
+        background: white;
+        color: #0c81a8;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+      .activeClass {
+        background: #0c81a8;
+        color: white;
+      }
+      @media screen and (min-width: 480px) {
+        display: none;
+      }
+    }
+
+    .heading {
+      color: #333;
+      font-family: Poppins;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 500;
+      text-align: center;
+      @media screen and (max-width: 480px) {
+        color: #0c81a8;
+        display:flex;
+        flex-direction: column;
+        padding: 1rem 0rem 1rem 0rem;
+        span {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .subheading {
+    color: #333;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 6px;
+
+    span {
+      color: #0c81a8;
+      margin-left: 0.4rem;
+
+      .login-link {
+        text-decoration: none;
+        color: #0c81a8;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .email-verify {
+    font-size: 13px;
+    color: black;
+  }
+
+  .label {
+    color: #666;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+  }
+
+  .body {
+    width: 40vw;
+    background: rgba(255, 255, 255, 0.65);
+    padding-right: 2rem;
+    color: $signuptextcolor;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+      padding: 1rem;
+    }
+
+    .account-create {
+      color: $primaryDark1TextColor;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .account {
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: $signuptextweight;
+      /* 137.5% */
+
+      span {
+        color: $primaryDark1TextColor;
+        font-weight: $signuptextweightbold;
+      }
+    }
+
+    .formPart {
+      display: flex;
+      flex-direction: column;
+
+      .namepartflex {
+        width: 100%;
+        gap: 5%;
+        display: flex;
+        justify-content: space-between;
+        // padding-right: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .name-part {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      input {
+        border-radius: 4px;
+        border: none;
+        background: #f5f5f5;
+        padding: 0.4rem 0.4rem;
+        font-size: 0.875rem;
+      }
+
+      input::placeholder {
+        font-size: 0.875rem;
+        color: $signuptextcolor;
+      }
+
+      .rest-form-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        width: 100%;
+        font-size: 15px;
+        margin-top: 0.5rem;
+        
+        .passwordError {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        h4 {
+          margin: 0px;
+          font-weight: 400;
+          color: black;
+          font-size: 13px;
+          a {
+            color: black;
+          }
+        }
+
+        // padding-right: 2rem;
+        .hide-password {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        input {
+          width: 100%;
+        }
+
+        .eye {
+          display: flex;
+          justify-content: end;
+
+          button {
+            background: white;
+            border: none;
+            .eye-icon {
+              display: flex;
+              font-size: 13px;
+              color: rgba(102, 102, 102, 0.8);
+            }
+          }
+        }
+
+        .password {
+          background: #f5f5f5;
+          border: none;
+        }
+
+        ul {
+          display: flex;
+          margin-block-start: 0px;
+          margin-block-end: 0px;
+          gap: 0.5rem;
+
+          li {
+            list-style-type: disc;
+            font-size: 12px;
+            @media screen and (max-width: 480px) {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+
+      .notify-container {
+        display: flex;
+
+        input[type="checkbox"] {
+          accent-color: black;
+        }
+      }
+
+      .captcha-part {
+        width: 100%;
+        // padding-right: 2rem;
+        display: flex;
+        justify-content: center;
+        .captcha {
+          flex: 1;
+          width: 50%;
+
+          input {
+            font-size: 2rem;
+            padding: 2rem 1rem;
+            border: none;
+            background: #f5f5f5;
+          }
+
+          input::placeholder {
+            font-size: 2rem;
+          }
+        }
+
+        .buttonPart {
+          button {
+            font-size: 1rem;
+            margin: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-image {
+    display: none;
+  }
+  .main-part {
+    padding: 0px;
+  }
+}

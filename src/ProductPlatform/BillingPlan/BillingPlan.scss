@@ -1,0 +1,53 @@
+.plan {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 17px;
+      min-height: 6rem;
+    }
+  }
+  .data2,
+  .data3,
+  .data4 {
+    font-size: 1.3rem;
+  }
+  // font-size: 1.3rem;
+  //   margin-bottom: 1rem;
+  .data1 {
+    // display: flex;
+    flex-direction: column;
+    // padding-bottom: 4.3rem;
+    .data1content{
+      font-size: 1.3rem;
+    margin-bottom: 1rem;
+    }
+    span{
+            font-size: 1rem;
+                padding-top: 2rem;
+                color: #999;
+                font-weight: 300;
+    }
+  }
+  button {
+    height: 5vh;
+    width: 13vw;
+    margin-top: 1rem;
+    background: #0c81a8;
+    border: none;
+    color: #fff;
+    border-radius: 0.2rem;
+  }
+}

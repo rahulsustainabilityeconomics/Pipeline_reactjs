@@ -1,0 +1,75 @@
+.App {
+  font-family: 'Poppins', sans-serif;
+
+  .card-button {
+    border-radius: 4px;
+    border: 1px solid #0C81A8;
+    background: #0C81A8;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.2rem 1rem;
+    /* 125% */
+  }
+
+  .card-light-button {
+    border-radius: 4px;
+    border: 1px solid #7B5ECA;
+    background: #FFF;
+    color: #7B5ECA;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0.3rem 1rem;
+  }
+
+  *{
+    box-sizing: border-box;
+  }
+
+  // Margin and Padding
+  .mt-1 {
+    margin-top: 1rem;
+  }
+
+  .mt-2 {
+    margin-top: 2rem;
+  }
+
+  .mt-3 {
+    margin-top: 3rem;
+  }
+
+  .pd-1 {
+    padding: 1rem;
+  }
+
+  .pl-1 {
+    padding-left: 1rem;
+  }
+
+  .pr-1 {
+    padding-right: 1rem;
+  }
+
+  .f6s {
+    font-weight: 600;
+  }
+
+  .f5s {
+    font-weight: 500;
+  }
+
+  .f3s {
+    font-weight: 300;
+  }
+
+  .boxshadowprimary{
+    box-shadow: 0px 4px 12px 0px rgba(56, 20, 154, 0.12);
+  }
+}

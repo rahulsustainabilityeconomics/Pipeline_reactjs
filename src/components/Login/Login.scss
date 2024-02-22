@@ -1,0 +1,318 @@
+@import "../../scss/common/common";
+
+$logintextcolor: #9a9a9a;
+$logintextweight: 400;
+$logintextweightbold: 600;
+
+.login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  .company {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1); /* Adding a bottom box shadow */
+    @media screen and (min-width: 480px) {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 12px;
+      .colorHeading {
+        color: #0b80a8;
+      }
+      div {
+        font-size: 0.8rem;
+      }
+      .mobileLogo{
+        width:20vw;
+      }
+    }
+  }
+
+  .login-image {
+    height: 100vh;
+    width: 70vw;
+    object-fit: cover;
+  }
+
+  .main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    @media screen and (max-width: 480px) {
+      height: 100%;
+      padding: 0px;
+    }
+    .auth {
+      display: flex;
+      flex-direction: row;
+      box-shadow: 2px 2px 8px #888;
+      border-radius: 12px;
+      a {
+        text-decoration: none;
+        padding: 0.3rem 0.6rem;
+        background: white;
+        color: #0c81a8;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+      .activeClass {
+        background: #0c81a8;
+        color: white;
+      }
+      @media screen and (min-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
+  .heading {
+    color: #333;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    @media screen and (max-width: 480px) {
+      padding: 1rem 0rem 1rem 0rem;
+      color: #0c81a8;
+      span {
+        color: black;
+      }
+    }
+  }
+
+  .subheading {
+    color: #333;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0px;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    span {
+      color: #0c81a8;
+
+      .signup-link {
+        text-decoration: none;
+        white-space: nowrap;
+        color: #0c81a8;
+        margin-left: 0.2rem;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .label {
+    color: #666;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .body {
+    width: 40vw;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.65);
+    padding-right: 2rem;
+    color: $logintextcolor;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+      padding: 1rem;
+    }
+
+    .account-create {
+      color: $primaryDark1TextColor;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .account {
+      font-feature-settings: "clig" off, "liga" off;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: $logintextweight;
+      /* 137.5% */
+
+      span {
+        color: $primaryDark1TextColor;
+        font-weight: $logintextweightbold;
+      }
+    }
+
+    .formPart {
+      gap: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      .namepartflex {
+        width: 100%;
+        gap: 5%;
+        // padding-right: 2rem;
+      }
+
+      .name-part {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      input {
+        border-radius: 4px;
+        border: none;
+        background: #f5f5f5;
+        padding: 0.4rem 0.4rem;
+        font-size: 0.875rem;
+      }
+
+      input::placeholder {
+        font-size: 0.875rem;
+        color: $logintextcolor;
+      }
+
+      .rest-form-part {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        width: 100%;
+
+        // padding-right: 2rem;
+        .password-container {
+          display: flex;
+          flex: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .eye {
+            display: flex;
+            justify-content: end;
+
+            button {
+              background: white;
+              border: none;
+              padding-top: 8px;
+
+              .eye-icon {
+                display: flex;
+                font-size: 13px;
+                color: rgba(102, 102, 102, 0.8);
+              }
+            }
+          }
+        }
+
+        input {
+          width: 100%;
+        }
+
+        .password {
+          background: #f5f5f5;
+          border: none;
+        }
+      }
+
+      .sign-up-to-account {
+        display: flex;
+        justify-content: space-between;
+        div {
+          color: #0c81a8;
+
+          .resetpassword-link {
+            text-decoration: none;
+            color: #0c81a8;
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            white-space: nowrap;
+            display: flex;
+            align-items: flex-start;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          justify-content: flex-end;
+        }
+      }
+
+      .captcha-part {
+        width: 100%;
+        // padding-right: 2rem;
+        .error {
+          color: red;
+          font-size:12px;
+          padding-bottom:1rem;
+
+        }
+
+        .captcha {
+          flex: 1;
+          width: 50%;
+
+          input {
+            font-size: 2rem;
+            padding: 2rem 1rem;
+            border: none;
+            background: #f5f5f5;
+          }
+
+          input::placeholder {
+            font-size: 2rem;
+          }
+        }
+
+        .buttonPart {
+          flex: 1;
+          text-align: center;
+          align-self: flex-start;
+
+          button {
+            font-size: 1rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+// @media screen and (max-width:1024px) {
+
+//     .login .body {
+//         width: 70vw;
+//     }
+// }
+@media screen and (max-width: 480px) {
+  .login-image {
+    display: none;
+  }
+  .main-part {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,63 @@
+.orderHistory {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height:90vh;
+  .heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0C81A8;
+    
+  }
+  .subheadingrow{
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 0vh;
+    .subheading {
+      display: flex;
+    flex-direction: row;
+    border: 1px solid #55A7C5;
+    padding: 0.4rem 1.4rem 0.4rem 1.4rem;
+    border-radius: 0.3rem;
+      .sector {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        .sectorName {
+          white-space: nowrap;
+          color: #555555;
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+    .contact{
+      button{
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #0C81A8;
+        letter-spacing: 0em;
+        color: white;
+        padding: 0.6rem;
+        border-radius: 0.3rem;
+        border:none;
+      }
+    }
+  }
+  
+  .orders {
+    display: flex;
+    flex-direction: row;
+    .order {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      padding: 1rem;
+    }
+  }
+}

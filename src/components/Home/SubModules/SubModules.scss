@@ -1,0 +1,210 @@
+
+.parentsubmaincontainer {
+  .breadcrumb {
+    display: flex;
+
+    gap: 0.3rem;
+    margin-top: 0.4rem;
+    margin-left: 1rem;
+
+    a {
+      text-decoration: none;
+      color: #959595;
+    }
+
+    .persona {
+      color: #0c81a8;
+      font-weight: 500;
+    }
+  }
+
+  .parentSubModule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+   
+
+    .headingModule {
+      font-family: Poppins;
+      font-size: 40px;
+      font-weight: 600;
+      line-height: 3rem;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #0c81a8;
+      padding: 12px;
+      @media screen and (max-width:480px) {
+        font-size: 26px;        
+      }
+    }
+
+    .subHeadingModule {
+      color: #6b6b6b;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0em;
+      text-align: center;
+      @media screen and (max-width:480px) {
+        display: none;        
+      }
+    }
+
+    .cardDiv {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .carditems {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center;
+        column-gap: 1vw;
+        // row-gap: 4vh;
+        width: 95vw;
+        margin-top: 3rem;
+      }
+
+      .carditemsSecond {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        margin-top: 1.5rem;
+
+        .secondRow {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          column-gap: 1vw;
+        }
+      }
+    }
+
+    // Module Details
+
+    .details {
+      width: 95vw;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1.5vw;
+
+      .leftColumn {
+        // width: 50%;
+        height: 68vh;
+        overflow: scroll;
+        flex: 2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        // grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        @media screen and (max-width:480px) {
+          display: none;
+        }
+        @media screen and (min-width:481px ) and (max-width:1024px) {
+          display: none;          
+        }
+      }
+
+      .rightColumn {
+        flex: 10;
+        border-radius: 6px;
+        background: #fff;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        // display: none;
+
+        .imagediv {
+          // margin-top: 2rem;
+        }
+
+        .logo {
+          height: 35px;
+          width: 35px;
+          margin-top: 0.5rem;
+        }
+        .categoryLogo {
+          height: 45px;
+          width: 45px;
+          margin-top: 1rem;
+        }
+
+        .fintext {
+          color: #000;
+          text-align: center;
+          font-size: 1.2rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          /* 55.556% */
+          letter-spacing: 0.432px;
+        }
+
+        .rightcolumncards {
+          // padding: 0rem 1.5rem;
+          min-width: 43rem;
+          display: grid;
+          column-gap: 2.5rem;
+          max-width: 54rem;
+          @media screen and (max-width:480px) {
+            display: flex;
+            flex-direction: column;
+            min-width: 20rem;
+            
+          }
+          
+        }
+
+        .contentrow {
+          display: flex;
+          gap: 5px;
+        }
+
+        .next {
+          border: none;
+          border-radius: 4px;
+          background: #7b5eca;
+          padding: 0.5rem 1rem;
+          color: #fff;
+          font-feature-settings: "clig" off, "liga" off;
+          font-size: 0.875rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          /* 125% */
+        }
+        @media screen and (min-width:481px) and (max-width:1024px) {
+          flex-direction: column;          
+        }  
+      
+      }
+    }
+  @media screen and (max-width:480px) {
+    
+     height:33vh;
+     justify-content: start;
+    
+    
+    
+  }
+  @media screen and (min-width:481px ) and (max-width:1024px) {
+    justify-content: normal;        
+  }
+
+}
+}

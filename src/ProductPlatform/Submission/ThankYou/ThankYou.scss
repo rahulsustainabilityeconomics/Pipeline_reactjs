@@ -1,0 +1,28 @@
+.submitting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  .thankImage {
+    margin-top: -2rem;
+  }
+  .submit-container {
+    font-size: 2.5rem;
+    font-weight: 500;
+    @media screen and (max-width: 480px) {
+      font-size: 23px;
+    }
+  }
+  .message {
+    font-size: 0.9rem;
+    margin-top: 0.4rem;
+  }
+  .home-link {
+    color: #0c81a8;
+    font-weight: 500;
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+}

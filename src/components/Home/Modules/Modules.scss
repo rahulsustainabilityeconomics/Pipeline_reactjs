@@ -1,0 +1,101 @@
+@import "../../../assets/StyleAssets/color.scss";
+
+.breadcrumb-container {
+  display: flex;
+  flex-direction: row;
+  .breadcrumb {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 0rem 1rem 0rem 1rem;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.parentModule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  padding-top: 3rem;
+  .headingModule {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: 0em;
+    text-align: center;
+    color:$text-color;
+    padding: 12px;
+    @media screen and (max-width:480px) {
+      
+      font-size: 32px;
+    }
+  }
+
+  .subHeadingModule {
+    color: $sub-heading;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    @media screen and (max-width:480px) {
+        display: none;
+    
+      }
+  }
+
+  .cardDiv {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .carditems {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      justify-content: center;
+      align-items: center;
+      column-gap: 1.5vw;
+      width: 95vw;
+      margin-top: 3rem;
+      @media screen and (max-width:480px) {
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 2vh;
+          justify-items:center;
+        }
+        
+    }
+
+    .carditemsSecond {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      margin-top: 1.5vw;
+      
+
+      .secondRow {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5vw;
+        @media screen and (max-width:480px) {
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 4.5vw;
+          align-items: center;       
+          justify-items: center;
+          padding-bottom: 1rem;
+          }
+      }
+    }
+    @media screen and (max-width:480px) {
+      overflow-x: clip;
+    }
+  }
+}

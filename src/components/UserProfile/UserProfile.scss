@@ -1,0 +1,15 @@
+.UserProfileDropdown{
+        background-color: white;
+            position: absolute;
+            right: 9px;
+            width: 15vw;
+            margin-top: 4%;
+            border-radius: 1rem;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+            li{
+                    display: flex;
+                        gap: 0.3rem;
+                        align-items: center;
+                        color: #4D4D4D;
+            }
+}

@@ -1,0 +1,198 @@
+.ProductPlatform {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  margin: 12px;
+  @media screen and (max-width: 480px) {
+    padding: 0px;
+  }
+
+
+  .main-heading {
+    color: #0c81a8;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 3.5rem;
+    @media screen and (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+      line-height: 2rem;
+      font-size: 24px;
+      text-align: center;
+      .colorHeading {
+        color: black;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .breadcrumb {
+    display: flex;
+    margin-bottom: 1rem;
+
+    a {
+      text-decoration: none;
+      color: #959595;
+      @media screen and (max-width: 480px) {
+        font-size: 13px;
+      }
+    }
+
+    .bank {
+      color: #0c81a8;
+      font-weight: 500;
+    }
+  }
+
+  .sub-heading {
+    font-size: 14px;
+    color: #6b6b6b;
+    line-height: 26px;
+    padding-top: 2rem;
+    @media screen and (max-width: 480px) {
+      padding-top: 1rem;
+      font-size: 13px;
+      text-align: center;
+      line-height: 23px;
+    }
+  }
+
+  .Product-details {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .company-logo {
+      padding: 12px;
+      @media screen and (max-width: 480px) {
+        padding: 0px;
+      }
+    }
+
+    .company-logo svg {
+      width: 60vw;
+      height: 47vh;
+      padding-top: 8vh;
+      @media screen and (max-width: 480px) {
+        width: 90vw;
+        height: 25vh;
+        padding-top: 0px;
+      }
+    }
+
+    .card-detail {
+      margin: 1.5rem 1rem 0rem 1rem;
+      width: 30vw;
+      height: 55vh;
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+      @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 1rem;
+        width: 100%;
+        height: 100%;
+      }
+      .card-data {
+        height: 100%;
+        @media screen and (max-width: 480px) {
+          height: 35vh;
+        }
+      }
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 1rem;
+
+        .buttons {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 0.5rem;
+          @media screen and (max-width: 480px) {
+            justify-content: center;
+          }
+          .Previous,
+          .Next {
+            width: 12rem;
+            height: 2.5rem;
+            border: 1px solid #0c81a8;
+            border-radius: 0.5rem;
+            color: #0c81a8;
+            font-size: 1rem;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            cursor: pointer;
+            @media screen and (max-width: 480px) {
+              width: 8rem;
+              height: 2rem;
+              color: #0c81a8;
+              font-size: 0.8rem;
+              gap: 0.8rem;
+            }
+          }
+        }
+        .complete-journey {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: end;
+          margin-top: 1rem;
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+          @media screen and (max-width: 480px) {
+            margin-right: 0rem;
+            justify-content: center;
+          }
+          .submit {
+            height: 2.5rem;
+            padding-left: 3.3rem;
+            padding-right: 3.3rem;
+            background-color: #0c81a8;
+            color: #fff;
+            border: none;
+            font-size: medium;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            @media screen and (max-width: 480px) {
+              height: 2rem;
+              font-size: 0.8rem;
+              gap: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .buttonPart {
+    display: flex;
+    margin-top: 1rem;
+    width: 70%;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+    .add-cart {
+      flex: 9;
+      margin-top: -22px;
+      .selected-product {
+        padding-bottom: 6px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #6b6b6b;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.parent-cart {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    @media screen and (max-width: 480px) {
+        gap:0.5rem;
+    }
+    .cart {
+        display: flex;
+        gap: 1rem;
+
+        .title {
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            background: #0C81A8;
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.12);
+            padding: 0.4rem 1rem;
+            color: #FFF;
+            font-size: 0.8rem;
+            font-style: normal;
+            font-weight: 500;
+            /* 256.25% */
+            @media screen and (max-width: 480px) {
+                padding:0.3rem 0.4rem;
+            }
+
+            span {
+                padding-left: 0.7rem;
+            }
+
+            button {
+                border: none;
+                background: transparent;
+                color: #FFF;
+                cursor: pointer;
+            }
+        }
+    }
+}

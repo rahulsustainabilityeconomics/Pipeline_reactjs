@@ -1,0 +1,114 @@
+.accessdetail {
+  top: 12%;
+  right: 0;
+  background-color: white;
+  width: 23vw;
+  height: 90vh;
+  padding: 1rem;
+  z-index: 2;
+  overflow: scroll;
+  position: absolute;
+  .acess-type-detail {
+    padding-top: 1rem;
+    display: flex;
+    gap: 9.5rem;
+
+    .access-type-button {
+      border: none;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .access-type-heading {
+      font-size: 14px;
+      white-space: nowrap;
+      font-family: Poppins;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .horizontail {
+    width: 100%;
+    background-color: #7b7b7b;
+    height: 1px;
+  }
+
+  .purchase-detail-data {
+    display: flex;
+    gap: 11rem;
+    padding-top: 1rem;
+    .purchase-access-button {
+      border: none;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .purchase-detail {
+      font-size: 14px;
+      white-space: nowrap;
+      font-family: Poppins;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .container-name {
+    font-weight: 600;
+  }
+
+  .accesstypecontent {
+    h3 {
+      font-weight: 600;
+      font-size: 13px;
+      color: #0c81a8;
+      font-family: Poppins;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    p {
+      font-size: 12px;
+      font-family: Poppins;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #4a4a4a;
+    }
+  }
+  .purchase-table {
+    width: 91%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    border-radius: 10px;
+  }
+
+  .purchase-table td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: left;
+  }
+  .purchase-table th {
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  .moduleName {
+    font-weight: 600;
+    font-size: 13px;
+    color: #0c81a8;
+    margin: 0.5rem;
+  }
+  table {
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+}

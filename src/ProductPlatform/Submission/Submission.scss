@@ -1,0 +1,111 @@
+.submission1 {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  .submission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .infinity-container {
+      height: 55vh;
+      @media screen and (max-width: 480px) {
+        width: 100vw;
+      }
+    }
+
+    .infinity-container svg {
+      height: 40vh;
+      margin-right: 8vw;
+      @media screen and (max-width: 480px) {
+        margin: 0rem;
+        width: 100vw;
+        padding: 1rem;
+      }
+    }
+
+    .main-heading {
+      color: #0c81a8;
+      font-weight: 600;
+      font-size: 2.5rem;
+      @media screen and (max-width: 480px) {
+        font-size: 23px;
+        text-align: center;
+      }
+    }
+
+    .sub-para1 {
+      color: #999999;
+      position: relative;
+      padding-top: 1rem;
+      font-size: 14px;
+      @media screen and (max-width: 480px) {
+        text-align: center;
+      }
+    }
+
+    .sub-para2 {
+      color: #999999;
+      position: relative;
+      padding-bottom: 3rem;
+      font-size: 14px;
+      @media screen and (max-width: 480px) {
+        text-align: center;
+        padding-bottom: 0rem;
+      }
+    }
+  }
+
+  .buttons {
+    flex: 3;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    gap: 2rem;
+    @media screen and (max-width: 480px) {
+      padding: 0px;
+      justify-content: center;
+      padding-bottom: 1rem;
+    }
+
+    .Next {
+      width: 12rem;
+      height: 2.5rem;
+      border: 1px solid #0c81a8;
+      border-radius: 0.5rem;
+      color: #0c81a8;
+      font-size: 1rem;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      gap: 1rem;
+      &:hover {
+        background-color: #0c81a8;
+        color: #fff;
+      }
+    }
+    .Previous {
+      width: 12rem;
+      height: 2.5rem;
+      border: 1px solid #0c81a8;
+      border-radius: 0.5rem;
+      color: #0c81a8;
+      font-size: 1rem;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #0c81a8;
+        color: #fff;
+      }
+    }
+  }
+}

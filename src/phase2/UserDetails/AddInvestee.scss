@@ -1,0 +1,155 @@
+.userDetailsTable {
+    width:100%;
+    border-spacing: 0px;
+}
+.top-container{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #EFEFEF;;
+}
+.sidebar{
+    width:20%;
+}
+.tableHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:16px
+
+}
+
+/* NestedDropdown.css */
+.nested-dropdown-container {
+    display: flex;
+  }
+  
+  .dropdown-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 1;
+  }
+  
+  .submenu-item {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .options {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .option {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Add your own styling as needed */
+  
+.rightHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:20px;
+}
+.leftHeader{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.main-container{
+    width:100%;
+    margin:12px;
+    border-radius: 4px;
+    background-color: white;
+
+}
+.userDetailsTable th{
+    background-color: #EDFAFF;
+    border-top: 1px solid #CECECE;
+    border-bottom: 1px solid #CECECE;
+    
+}
+td{
+    text-align:center;
+    border-bottom:1px solid #CECECE;
+}
+tbody tr{
+    border-bottom:1px solid black;
+}
+.resendLink{
+    cursor: pointer;
+    color: #0C81A8;
+    ;
+}
+th{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #595959;
+}
+
+button{
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+td{
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #595959;
+}
+li{
+    list-style-type: none;
+    border-radius: 4px;
+    padding:1px;
+    margin: 4px;
+    
+}
+ul{
+    padding-inline-start: 0px;
+    margin:12px;
+}
+
+.editButton{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    padding:2px;
+    margin:6px;
+}
+.userEditButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

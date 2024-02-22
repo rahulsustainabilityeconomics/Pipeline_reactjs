@@ -1,0 +1,46 @@
+.popup {
+    height: 60vh;
+    position: absolute;
+    width: 62vw;
+    background-color: white;
+    left: 19rem;
+    top: 13rem;
+
+    .popup-content {
+        .popup-close {
+            margin-left: -3rem;
+            border: none;
+            width: 7rem;
+            text-align: left;
+            background-color: white;
+            height: 3.6rem;
+            border-radius: 4rem;
+
+            .popup-cross {
+                img {
+                    margin-top: 0.3rem;
+                }
+            }
+            @media screen and (max-width:480px) {
+                margin-left: -1rem;
+                width: 4rem;
+                height: 2.6rem;
+
+                
+            }
+        }
+
+        .popup-content-video {
+            margin-left: 0rem;
+            margin-top: -2rem;
+        }
+    }
+
+    @media screen and (max-width:480px) {
+        height: 55vh;
+    width: 87vw;
+    // margin-left: 0rem;
+    position: unset;
+    }
+}
+

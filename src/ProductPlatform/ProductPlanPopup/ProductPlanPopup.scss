@@ -1,0 +1,93 @@
+.productplanContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    padding:10px;
+}
+.rightcolumncards{
+    display: flex;
+    gap:1rem;
+    @media screen and (max-width: 480px) {
+       flex-direction: column;
+    }
+    .moduleFinance{
+        margin: 20px 0px 20px 0px;
+    }
+    
+}
+
+.fintext{
+    padding-right: 2rem;
+    font-family: Poppins;
+    font-size: 21px;
+    padding: 1.5rem;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0.012em;
+    text-align: center;
+    @media screen and (max-width: 480px) {
+        padding: 1rem;
+        padding-top: 0rem;
+    
+    }
+
+}
+.image{
+    border-radius: 10px;
+    border:2px solid #7B5ECA;
+}
+
+
+.addToCartPopup{
+    height: 29rem;
+        position: absolute;
+        width: 58rem;
+        background-color: white;
+        left: 19rem;
+        top: 15%;
+        .headerContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items:start;
+            width:100%;
+        }
+      .popup-content{
+        .popup-closeButton {
+                border: none;
+                text-align: left;
+                // background-color: white;
+                border-radius: 4rem;
+        
+                .popup-cross {
+                    img {
+                        margin-top: 0.3rem;
+                    }
+                }
+            }
+.popup-content-video{
+    margin-left: 0rem;
+        margin-top: -2rem;
+}
+      }
+
+@media screen and (max-width:480px) {
+    width: 93vw;
+    height: 83vh;
+    left: 1rem;
+    overflow: scroll;
+    
+}
+    }
+
+.popup-closeButton {
+    border: none;
+   background-color: rgba(255,255,255,0);
+   
+}
+.image{
+    height:20px;
+    align-items: start;
+}

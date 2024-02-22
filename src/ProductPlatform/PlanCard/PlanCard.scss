@@ -1,0 +1,77 @@
+
+.SelectPlan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 6px 46px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 6px;
+
+    .PlanCard {
+        display: flex;
+        flex-direction: column;
+        gap: 5px; 
+        padding: 1rem;
+        padding-bottom: 2rem;
+        max-width: 12rem;
+        min-width: 9rem;
+        .logo {
+          height: 30px;
+          width: 30px;
+        }
+        .cardTitle {
+          color: #000;
+          font-feature-settings: "clig" off, "liga" off;
+          font-size: 1rem;
+          padding: 1rem 0rem 1rem 0rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+        }
+        .contentpart {
+          display: flex;
+          flex-direction: column;
+          margin-top: 8px;
+          gap: 7px;
+          .contentrow {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            .content {
+              color: #7e7e7e;
+              font-size: 0.75rem;
+              font-style: normal;
+              font-weight: 400;
+              // line-height: 22px;
+              /* 157.143% */
+              letter-spacing: 0.168px;
+            }
+          }
+        }
+        @media screen and (max-width:480px) {
+            max-width: 20rem;
+            gap: 5px;
+            
+        }
+      }
+      .buttonContainer {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        border-radius: 4px;
+     margin-bottom: 1rem;
+     margin-right: 1rem;
+     margin-left: 1rem;
+        .selectButton {
+          border: none;
+          font-size: 13px;
+        }
+      }
+
+      @media screen and (max-width:480px) {
+        border-radius: 5px;
+        
+    }
+}
