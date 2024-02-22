@@ -1,3 +1,12 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+# To get a newer version, you will need to update the SHA.
+# You can also reference a tag or branch, but the action may change without warning.
+
 name: Deploy to Amazon ECS
 
 on:
@@ -65,16 +74,17 @@ jobs:
           ALB_ARN="arn:aws:elasticloadbalancing:ap-south-1:196432606481:loadbalancer/app/se-market-sample/dc07e479c708981d"
           TARGET_GROUP_ARN="arn:aws:elasticloadbalancing:ap-south-1:196432606481:targetgroup/se-sample-TG/5793b4caea976701"
           ECS_SERVICE_NAME="se-market-place-sample-frontend"
+          REGION="ap-south-1"
 
           # Register ECS service with ALB Target Group
           aws ecs update-service \
             --cluster se-market-place-sample \
             --service $ECS_SERVICE_NAME \
             --desired-count 1 \
-            --region REGION
+            --region $REGION
 
           # Get ECS service ARN
-          ECS_SERVICE_ARN=$(aws ecs describe-services --services $ECS_SERVICE_NAME --cluster se-market-place-sample --region REGION --query 'services[0].serviceArn' --output text)
+          ECS_SERVICE_ARN=$(aws ecs describe-services --services $ECS_SERVICE_NAME --cluster se-market-place-sample --region $REGION --query 'services[0].serviceArn' --output text)
 
           # Register ECS service with ALB Target Group
           aws elbv2 register-targets \
