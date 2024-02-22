@@ -67,39 +67,3 @@ jobs:
           service: se-market-place-sample-frontend
           cluster: se-market-place-sample
           wait-for-service-stability: true
-
-      - name: Register targets with existing ALB Target Group
-        run: |
-          # Replace placeholders with actual values
-          ALB_ARN="arn:aws:elasticloadbalancing:ap-south-1:196432606481:loadbalancer/app/se-market-sample/dc07e479c708981d"
-          TARGET_GROUP_ARN="arn:aws:elasticloadbalancing:ap-south-1:196432606481:targetgroup/se-sample-TG/5793b4caea976701"
-          ECS_SERVICE_NAME="se-market-place-sample-frontend"
-          REGION="ap-south-1"
-
-          # Register ECS service with ALB Target Group
-          aws ecs update-service \
-            --cluster se-market-place-sample \
-            --service $ECS_SERVICE_NAME \
-            --desired-count 1 \
-            --region $REGION
-
-          # Get ECS service ARN
-          ECS_SERVICE_ARN=$(aws ecs describe-services --services $ECS_SERVICE_NAME --cluster se-market-place-sample --region $REGION --query 'services[0].serviceArn' --output text)
-
-          # Register ECS service with ALB Target Group
-          aws elbv2 register-targets \
-            --target-group-arn $TARGET_GROUP_ARN \
-            --targets Id=$ECS_SERVICE_ARN
-
-          # Attach ALB Target Group to ALB listener
-          aws elbv2 create-listener-rules \
-            --listener-arn $ALB_ARN \
-            --cli-input-json '{
-              "ListenerArn": "ALB_ARN",
-              "DefaultActions": [
-                {
-                  "Type": "forward",
-                  "TargetGroupArn": "TARGET_GROUP_ARN"
-                }
-              ]
-            }'
