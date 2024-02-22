@@ -1,0 +1,62 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:ap-south-1:196432606481:task-definition/se-market-place-frontend-sample:1",
+    "containerDefinitions": [
+        {
+            "name": "se-market-sample-frontend",
+            "image": "196432606481.dkr.ecr.ap-south-1.amazonaws.com/se-market-sample-frontend:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "se-market-sample-frontend-3000-tcp",
+                    "containerPort": 3000,
+                    "hostPort": 3000,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "se-market-place-frontend-sample",
+    "taskRoleArn": "arn:aws:iam::196432606481:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::196432606481:role/ecsTaskExecutionRole",
+    "networkMode": "bridge",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "cpu": "1024",
+    "memory": "512",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2024-02-22T08:42:51.596Z",
+    "registeredBy": "arn:aws:sts::196432606481:assumed-role/AWSReservedSSO_Devops-Dev-Per-1_ed1c678577b72473/rahul@sustainabilityeconomics.com",
+    "tags": []
+}
